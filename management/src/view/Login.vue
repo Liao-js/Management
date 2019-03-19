@@ -20,7 +20,7 @@
 					</ul>
 					<p class="tishi">{{tishi}}</p>
 					<div class="login_btn">
-						<input class="btn" type="button" v-on:click="login">
+						<input class="btn" type="button">
 					</div>
 				</div>
 			</div>
@@ -35,15 +35,17 @@
 <script>
 	import '@/assets/css/cssinit.css'
 	import '@/assets/css/login.css'
-	import {setCookie,getCookie} from '@/assets/js/cookie.js'
+	import axios from 'axios'
 	export default {
 		data(){
-            return{
-                tishi: '',
+            return{        
                 username: '',
                 password: '',
+                tishi: '',
             }
+        },
+        methos:{
+        	
         }
 	}	
 </script>
-

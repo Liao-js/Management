@@ -1,9 +1,9 @@
 .top{
 	min-width: 10rem;
 	height: 0.75rem;
-    background: url(../../../static/top_repeat.jpg) repeat;
+    background: url(../../../static/top_repeat_01.jpg) repeat;
 }
-.top_1000 {
+.top .top_1000{
     width: 10rem;
     height: 0.75rem;
     margin: auto;
@@ -68,7 +68,7 @@
 	font-size: 0.15rem;
 	height: 0.2rem
 }
-.login_btn {
+.login_btn{
     margin: 0.1rem 0.23rem 0.1rem 0.25rem;
 }
 .login_btn .btn{
@@ -76,7 +76,7 @@
 	width: 2.57rem;
 	background: url(../../../static/login_btn.png) no-repeat;
 }
-.foot {
+.foot{
     width: 10rem;
     border-top: solid 1px #d3d3d3;
     padding-top: 0.15rem;
