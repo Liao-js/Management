@@ -1,0 +1,87 @@
+.top{
+	min-width: 10rem;
+	height: 0.75rem;
+    background: url(../../../static/top_repeat.jpg) repeat;
+}
+.top_1000 {
+    width: 10rem;
+    height: 0.75rem;
+    margin: auto;
+}
+.top_logo img{
+	height: 0.75rem
+}
+.banner{
+	position: relative;
+    z-index: 0;
+    min-width: 10rem;
+    height: 4.54rem;
+    background: url(../../../static/login_bg.jpg) no-repeat;
+}
+.cnt{
+	height: 4.54rem;
+    margin: 0 auto;
+    overflow: visible;
+    position: relative;
+    width: 10rem;
+}
+.login_modern{
+	background: url(../../../static/login_modern.png) no-repeat;
+}
+.login{
+    width: 3.06rem;
+    height: 3.27rem;
+    color: #fff;
+    position: absolute;
+    top: 0.59rem;
+    left: 50%;
+    margin-left: 1.94rem;
+    z-index: 2;
+}
+.login ul{
+	padding: 0.7rem 0 0 0.25rem;
+}
+.login li {
+    width: 2.12rem;
+    padding-left: 0.45rem;
+    height: 0.40rem;
+    margin-bottom: 0.09rem;
+}
+.login .user{
+	background: url(../../../static/login_user.jpg) no-repeat;
+}
+.login .uname,.login .upwd{
+    border: solid 1px #FFF;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    width: 2rem;
+    margin-top: 0.05rem;
+    color: #7b7b7b;
+    padding-left: 5px; 
+}
+.login .pwd{
+	background: url(../../../static/login_pwd.jpg) no-repeat;
+}
+.login .tishi{
+	color: #EE0000;
+	padding-left: 0.27rem;
+	font-size: 0.15rem;
+	height: 0.2rem
+}
+.login_btn {
+    margin: 0.1rem 0.23rem 0.1rem 0.25rem;
+}
+.login_btn .btn{
+	height: 0.42rem;
+	width: 2.57rem;
+	background: url(../../../static/login_btn.png) no-repeat;
+}
+.foot {
+    width: 10rem;
+    border-top: solid 1px #d3d3d3;
+    padding-top: 0.15rem;
+    margin: 0.31rem auto auto auto;
+    line-height: 0.20rem;
+    color: #494949;
+    text-align: center;
+}

@@ -1,0 +1,35 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html{
+	font-size: 100px;
+}
+body{
+	font-size: 12px;
+}
+button,input{
+	border: none;
+    outline: 0;
+}
+label{
+	cursor: pointer;
+}
+li,ol,ul{
+	list-style: none outside none;
+}
+cite,em,i{
+	font-style: normal;
+}
+a{
+	text-decoration: none;
+    color: #262626;
+    outline: 0;
+}
+p{
+	word-wrap: break-word;
+    word-break: break-all;
+}
+input, select {
+    vertical-align: middle;
+}
