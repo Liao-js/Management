@@ -33,3 +33,13 @@ p{
 input, select {
     vertical-align: middle;
 }
+.cf{
+    zoom: 1;
+}
+.cf:after{
+	clear: both;
+}
+.cf:after,.cf:before{
+	display: table;
+	content: '';
+}
