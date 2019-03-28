@@ -1,8 +1,8 @@
 <template>
-	<div class="major">
+	<el-row class="major">
 		<pms-header></pms-header>
 		<pms-container></pms-container>	
-	</div>
+	</el-row>
 </template>
 
 <script>

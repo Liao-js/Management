@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Login from '@/view/Login'
 import pmsMain from '@/view/pmsMain'
+import operationFile from '@/view/pmsfile/operationFile'
+import queryFile from '@/view/pmsfile/queryFile'
 
 Vue.use(Router)
 
@@ -15,89 +17,82 @@ export default new Router({
   //mode: 'history',
   routes: [
     {
-      path: '/',
-      name: 'Login',
-      component: Login
+      path: '/main',
+      name: '人员档案',
+      iconCls: 'ma-icon-file',
+      component: pmsMain,
+      children:[
+        {
+          path: '/main/operationfile',
+          name: '管理人员档案',
+          component: operationFile,
+        },
+        {
+          path: '/main/queryfile',
+          name: '查询人员档案',
+          component: queryFile,
+        }
+      ]
     },
     {
       path: '/main',
-      name: 'pmsMain',
+      name: '人员调动',
+      iconCls: 'ma-icon-transfer',
       component: pmsMain,
-      hidden: true,
       children:[
         {
-          path: '/',
-          name: '人员档案',
-          iconCls: 'ma-icon-file',
+          path: '/main/',
+          name: '管理人员调动',
           component: pmsMain,
-          children:[
-            {
-              path: '/b',
-              name: '管理人员档案',
-              component: pmsMain,
-            },
-            {
-              path: '/c',
-              name: '查询人员档案',
-              component: pmsMain,
-            }
-          ]
         },
         {
-          path: '/',
-          name: '人员调动',
-          iconCls: 'ma-icon-transfer',
+          path: '/main/',
+          name: '查询人员调动',
           component: pmsMain,
-          children:[
-            {
-              path: '/',
-              name: '管理人员调动',
-              component: pmsMain,
-            },
-            {
-              path: '/',
-              name: '查询人员调动',
-              component: pmsMain,
-            }
-          ]
-        },
-        {
-          path: '/',
-          name: '奖罚管理',
-          iconCls: 'ma-icon-sanction',
-          component: pmsMain,
-          children:[
-            {
-              path: '/',
-              name: '管理人员调动',
-              component: pmsMain,
-            },
-            {
-              path: '/',
-              name: '查询人员调动',
-              component: pmsMain,
-            }
-          ]
-        },
-        {
-          path: '/',
-          name: '考核评定',
-          iconCls: 'ma-icon-appraisal',
-          component: pmsMain,
-          children:[
-            {
-              path: '/',
-              name: '管理考核评定',
-              component: pmsMain,
-            },
-            {
-              path: '/',
-              name: '查询考核评定',
-              component: pmsMain,
-            }
-          ]
-        },
+        }
       ]
+    },
+    {
+      path: '/main',
+      name: '奖罚管理',
+      iconCls: 'ma-icon-sanction',
+      component: pmsMain,
+      children:[
+        {
+          path: '/main/',
+          name: '管理人员调动',
+          component: pmsMain,
+        },
+        {
+          path: '/main/',
+          name: '查询人员调动',
+          component: pmsMain,
+        }
+      ]
+    },
+    {
+      path: '/main',
+      name: '考核评定',
+      iconCls: 'ma-icon-appraisal',
+      component: pmsMain,
+      children:[
+        {
+          path: '/main/',
+          name: '管理考核评定',
+          component: pmsMain,
+        },
+        {
+          path: '/main/',
+          name: '查询考核评定',
+          component: pmsMain,
+        }
+      ]
+    },
+    {
+      path: '/',
+      name: 'Login',
+      component: Login,
+      hidden: true,
     },
   ]
 })
