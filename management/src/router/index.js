@@ -41,12 +41,12 @@ export default new Router({
       component: pmsMain,
       children:[
         {
-          path: '/main/',
+          path: '/main/a',
           name: '管理人员调动',
           component: pmsMain,
         },
         {
-          path: '/main/',
+          path: '/main/b',
           name: '查询人员调动',
           component: pmsMain,
         }
@@ -59,12 +59,12 @@ export default new Router({
       component: pmsMain,
       children:[
         {
-          path: '/main/',
+          path: '/main/c',
           name: '管理人员调动',
           component: pmsMain,
         },
         {
-          path: '/main/',
+          path: '/main/d',
           name: '查询人员调动',
           component: pmsMain,
         }
@@ -77,12 +77,12 @@ export default new Router({
       component: pmsMain,
       children:[
         {
-          path: '/main/',
+          path: '/main/e',
           name: '管理考核评定',
           component: pmsMain,
         },
         {
-          path: '/main/',
+          path: '/main/f',
           name: '查询考核评定',
           component: pmsMain,
         }

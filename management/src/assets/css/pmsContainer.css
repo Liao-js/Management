@@ -67,3 +67,65 @@
     background-color: #fff;
     box-sizing: border-box;
 }
+
+.toolbar{
+    background: #f2f2f2;
+    padding: 0.1rem;
+    margin: 0.1rem 0;
+}
+.toolbar .el-form-item {
+    margin-bottom: 0.1rem;
+}
+.toolbar .el-form-item .el-button{
+    padding: 0.1rem 0.15rem;
+}
+.content-wrapper .el-table-demo{
+    width: 100%;
+    border: 1px solid #dfe6ec;
+    color: #1f2d3d;
+}
+.content-wrapper .el-table-demo thead{
+    color: #1f2d3d;
+}
+.content-wrapper .el-table-demo td, 
+.content-wrapper .el-table-demo th.is-leaf{
+    border-bottom: 1px solid #dfe6ec;
+}
+.content-wrapper .el-table-demo th{
+    background-color: #eef1f6;
+    text-align: left;
+}
+.content-wrapper .el-table-demo .cell{
+    line-height: 0.2rem;
+}
+.content-wrapper .el-table-demo td,
+.content-wrapper .el-table-demo th{
+    height: 0.4rem;
+    padding: 0;
+}
+.content-wrapper .el-table-demo .sort-caret.ascending{
+    border-bottom-color: #97a8be;
+}
+.content-wrapper .el-table-demo .sort-caret.descending{
+   border-top-color: #97a8be;
+}
+.content-wrapper .el-table-demo .ascending .sort-caret.ascending{
+    border-bottom-color: #48576a;
+}
+.content-wrapper .el-table-demo .descending .sort-caret.descending {
+    border-top-color: #48576a;
+}
+.content-wrapper .el-table-demo .el-button--small{
+    padding: 0.07rem 0.09rem;
+    border-radius: 4px;
+}
+.content-wrapper .el-table-demo .el-button--danger{
+    background-color: #ff4949;
+    border-color: #ff4949;
+}
+.content-wrapper .el-table-demo .el-button--danger:focus,
+.content-wrapper .el-table-demo .el-button--danger:hover {
+    background: #ff6d6d;
+    border-color: #ff6d6d;
+    color: #fff;
+}

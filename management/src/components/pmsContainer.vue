@@ -34,12 +34,13 @@
 </template>
 
 <script>
-	import '@/assets/css/cssinit.css'
 	import '@/assets/css/pmsContainer.css'
 	import '@/assets/icon/iconfont.css'
 	export default{
 		data(){
-			
+			return{
+				
+			}
 		},
 		methods:{
 			
@@ -49,7 +50,7 @@
 
 <style>
 	.fade-enter-active, .fade-leave-active {
-	  transition: opacity .3s;
+	  transition: opacity .2s;
 	}
 	.fade-enter, .fade-leave-to{
 	  opacity: 0;

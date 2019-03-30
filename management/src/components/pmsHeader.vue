@@ -21,7 +21,6 @@
 </template>
 
 <script>
-	import '@/assets/css/cssinit.css'
 	import '@/assets/css/pmsHeader.css'
 	import pmsChangepwd from '@/components/pmsChangepwd.vue'
 	import axios from 'axios'

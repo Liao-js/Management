@@ -44,7 +44,6 @@
 </template>
 
 <script>
-	import '@/assets/css/cssinit.css'
 	import '@/assets/css/pmsChangepwd.css'
 	import axios from 'axios'
 	export default{
