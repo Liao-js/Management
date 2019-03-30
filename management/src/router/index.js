@@ -4,6 +4,12 @@ import Login from '@/view/Login'
 import pmsMain from '@/view/pmsMain'
 import operationFile from '@/view/pmsfile/operationFile'
 import queryFile from '@/view/pmsfile/queryFile'
+import operationTransfer from '@/view/pmstransfer/operationTransfer'
+import queryTransfer from '@/view/pmstransfer/queryTransfer'
+import operationSanction from '@/view/pmssanction/operationSanction'
+import querySanction from '@/view/pmssanction/querySanction'
+import operationAppraisal from '@/view/pmsappraisal/operationAppraisal'
+import queryAppraisal from '@/view/pmsappraisal/queryAppraisal'
 
 Vue.use(Router)
 
@@ -41,14 +47,14 @@ export default new Router({
       component: pmsMain,
       children:[
         {
-          path: '/main/a',
+          path: '/main/operationtransfer',
           name: '管理人员调动',
-          component: pmsMain,
+          component: operationTransfer,
         },
         {
-          path: '/main/b',
+          path: '/main/querytransfer',
           name: '查询人员调动',
-          component: pmsMain,
+          component: queryTransfer,
         }
       ]
     },
@@ -59,14 +65,14 @@ export default new Router({
       component: pmsMain,
       children:[
         {
-          path: '/main/c',
+          path: '/main/operationsanction',
           name: '管理人员调动',
-          component: pmsMain,
+          component: operationSanction,
         },
         {
-          path: '/main/d',
+          path: '/main/querysanction',
           name: '查询人员调动',
-          component: pmsMain,
+          component: querySanction,
         }
       ]
     },
@@ -77,14 +83,14 @@ export default new Router({
       component: pmsMain,
       children:[
         {
-          path: '/main/e',
+          path: '/main/operationappraisal',
           name: '管理考核评定',
-          component: pmsMain,
+          component: operationAppraisal,
         },
         {
-          path: '/main/f',
+          path: '/main/queryappraisal',
           name: '查询考核评定',
-          component: pmsMain,
+          component: queryAppraisal,
         }
       ]
     },

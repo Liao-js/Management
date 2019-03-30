@@ -129,3 +129,18 @@
     border-color: #ff6d6d;
     color: #fff;
 }
+.content-wrapper .demo-table-expand {
+    font-size: 0;
+}
+.content-wrapper .demo-table-expand label {
+    width: 90px;
+    color: #99a9bf;
+}
+.content-wrapper .demo-table-expand .el-form-item {
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 50%;
+}
+.content-wrapper .el-table-demo  .el-table__expanded-cell[class*=cell] {
+    padding: 20px 50px;
+}
